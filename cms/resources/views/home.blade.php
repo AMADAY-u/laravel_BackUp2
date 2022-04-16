@@ -5,7 +5,6 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
                     <!--↓ここから追加↓-->
@@ -14,12 +13,31 @@
                     
                     <div class="alert alert-primary">
                             <!-- Book: 既に登録されてる本のリスト -->
+                           <p>Profile)</p>
                             @if(isset($profiles))
         
                                 <tr>
                                     <!-- タイトル -->
                                     <td class="table-text ">
-                                        <div class="pb-1">{{ $profiles->pet_name}}</div>
+                                        <h2 class="pb-1 text-black">{{ $profiles->pet_name}} ちゃん</h2>
+                                        
+                                            <div class="container">
+                                                <div class="row g-2">
+                                                    
+                                                    <div class="pb-1 col-5">品種：{{ $profiles->pet_specie}}</div>
+                                                    <div class="pb-1 col-7">性別：{{ $profiles->pet_sex}}</div>
+            
+                                                    <div class="pb-1 col-4">年齢：{{ $profiles->pet_age}}</div>
+                                                    <div class="pb-1 col-8">誕生日：{{ $profiles->pet_birth}}</div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="fw-bold">自己紹介</div>
+                                            <div>{{ $profiles->pet_content}}</div>
+                                            
+
+                                        
+                                        
                                         
                                         <!--<div class='row'>-->
                                         <!--    <div class="pb-3">-->

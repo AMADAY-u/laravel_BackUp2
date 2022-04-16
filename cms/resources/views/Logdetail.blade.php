@@ -3,24 +3,23 @@
     <!-- Book: 既に登録されてる本のリスト -->
         <div class="my-4">
             <table class="table table-striped task-table">
-                <!-- テーブルヘッダ -->
-                <div>
-                    <h1 class="fw-bold">詳細</h1>
-                   
-                </div>
+                
                 <!-- テーブル本体 -->
                 <div>
-                    <div class ='row mb-3 my-4'>
+                    <div class ='row mt-4'>
+                        
                         <div>
                             <!-- 画像 -->
-                            <div class="table-text">
+                            <div class="table-text mb-3">
                                 <div> <img src="/upload/{{$Log->image}}" width="100%"></div>
                             </div>
                             
                             <!-- タイトル -->
-                            <h1 class="table-text fs-1 fw-bold">
+                            <h1 class="table-text fs-1 fw-bold text-center">
                                 <div class=''>{{ $Log->pet_title }}</div>
                             </h1>
+                            
+                            
                             <div class="mx-3">
                                 <!-- 餌内容物 -->
                                 <div class="table-text pb-3">
@@ -65,7 +64,7 @@
                                         @endif
                                     </div>
                                 </div>
-                                
+                                <hr>
                                  <!--コメント送信-->
                                 <div class="input-group mb-3">
                                     <form action="{{ url('Comments') }}" method="POST" class="form-horizontal">

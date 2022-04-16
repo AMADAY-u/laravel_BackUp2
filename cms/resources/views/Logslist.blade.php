@@ -20,9 +20,8 @@
                                         <div> <img src="upload/{{$Log->image}}" width='100%' height='128px'></div>
                                     </div>
                                     <!-- タイトル -->
-                                    <p>
+                                    
                                         <div style="text-align: center;">{{ $Log->pet_title }}</div>
-                                    </p>
                                 </a>
                             </div>
                         </div>  

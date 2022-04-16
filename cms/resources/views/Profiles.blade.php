@@ -29,7 +29,7 @@
             </div>
             <!-- 性別 -->
             <div class="form-group col-md-6 p-2">
-                <label for="pet_sex" class="col-sm-3 control-label">性別</label>
+                <label for="pet_sex" class="col-sm-3 control-label">性別（不妊）</label>
                 <input type="text" name="pet_sex" class="form-control" id="pet_sex" value="{{ old('pet_sex') }}">
             </div>
             <!-- 誕生日 -->
