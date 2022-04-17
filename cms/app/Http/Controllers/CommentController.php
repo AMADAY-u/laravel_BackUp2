@@ -42,7 +42,8 @@ class CommentController extends Controller
         $comment->log_id =    $request->id;
         $comment->comment_content =    $request->comment_content;
         $comment->save();
-        return redirect('/Logslist');
+        return redirect("/Logdetail/$comment->log_id");
+        
         
         
     }
